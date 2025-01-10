@@ -31,3 +31,4 @@ $(document).ready(function () {
     typeLetter(); // Start the animation
 });
 
+

@@ -176,8 +176,21 @@ nav ul li a:hover::after {
     display: block;
 }
 
+h2{
+    text-align: center;
+}
+h2 {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #949492;
+    color: rgb(0, 0, 0);
+}
 
 
 
