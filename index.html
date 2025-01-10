@@ -18,34 +18,110 @@
         <nav>             
             <ul>                 
                 <li><a href="#">Home</a></li>                 
-                <li><a href="#">About me</a></li>                 
+                <li><a href="#about">About me</a></li>                 
                 <li><a href="#">Projets</a></li>                 
                 <li><a href="#">Contact me</a></li>             
             </ul>         
         </nav>                 
         
         <div class="text">             
-            <p>Full-stack developer</p>             
-            <h1>Hi, I'm <span>Wiame</span> From Morocco</h1>          
+            <p> <span id="animated-text">Full-stack developer</span></p>             
+            <h1>
+                Hi, I'm <span >Wiame</span> From Morocco
+            </h1>
+                    
         </div>               
     </div>               
  <!-- ~~~~~~~~~~~~~~~~~~~~~~~About~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <div id="about">
-        <div class="container-fluidW">
+        <div class="container-fluid">
             <div class="row justify-content-start">
-                <div class="col-6">
-                     <img src="image/pic.jpeg">
+                <div class="col-4">
+                     <img src="image/pic.jpeg" class="img-fluid">
                 </div>
-                <div class="col-6 text-center">
+                <div class="col-6">
                     <h1>About Me</h1>
+                    <p>My name is Wiame Ramzi, 
+                        and I am a passionate developer currently pursuing training at the Ahmed Elhansali Digital School in Beni Mellal.
+                         With a solid foundation in physics and energy, I hold a bachelor’s degree from Université Sultan Moulay Slimane.
+                        I've recently delved into web development and have developed skills in coding, design, and tools like jQuery and Figma.
+                         My journey involves creating engaging projects, including my personal portfolio, 
+                         which showcases my dedication to both aesthetics and functionality. 
+                         I am eager to continue growing as a full-stack developer and bring innovative ideas to life.</p>
+
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                         </div>
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front-End design</span></li>
+                                <li><span>jQuery Integration</span></li>
+                                <li><span>UI/UX Implementation</span></li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Building a Personal Portfolio</span></li>
+                                <li><span>Developing a Task Management Application</span></li>
+                                <li><span>Learning and Applying jQuery</span></li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>Current Training in Development</span>
+                                    <br>enrolled in a 9-month development training program 
+                                    at the Ahmed Elhansali Digital School in Beni Mellal.</li>
+                                
+                            </ul>
+                         </div>
                 </div>
 
             </div>
         </div>
     </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            
+            event.currentTarget.classList.add("active-link");
+            
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
     <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>     
     <script src="script.js"></script>
 </body> 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

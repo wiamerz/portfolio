@@ -79,11 +79,13 @@ nav ul li a:hover::after {
 }
 
 .text h1 {
-    font-size: 60px;
+    font-size: 45px;
     margin-top: 20px;
     font-weight: 700;
 }
-.text span{
+
+
+.text h1 span{
     color: #F958DB;
 }
 
@@ -106,7 +108,6 @@ nav ul li a:hover::after {
  } 
 
  .col-6 img {
-    width: 50%;
     border-radius: 40px;
     margin: 10%;
 
@@ -115,10 +116,64 @@ nav ul li a:hover::after {
     
 }
 .col-6 h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     color: white;
     
+}
+
+.col-6 p {
+    font-size: 15px;
+    font-family:  Arial, sans-serif;
+    
+    
+}
+
+
+#animated-text {
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide the text that's not shown yet */
+    display: inline-block;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #F958DB;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li span{
+      font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
 }
 
 
@@ -126,35 +181,3 @@ nav ul li a:hover::after {
 
 
 
-
-
-
-
-
-
-
-
-
-/* Media Queries for Responsive Design */
-/* @media (max-width: 768px) {
-    nav {
-        padding: 1rem;
-    }
-
-    nav ul {
-        gap: 1rem;
-    }
-
-    .text {
-        left: 5%;
-        width: 90%;
-    }
-
-    .text h1 {
-        font-size: 40px;
-    }
-
-    .text p {
-        font-size: 24px;
-    }
-} */
