@@ -1,201 +1,4 @@
-<<<<<<< HEAD
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
 
-body {
-    background: #080808;
-    color: #fff;
-}
-
-#header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(image/back.png);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 1.5rem 3rem;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
-    gap: 2rem;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-    font-weight: bold;
-    padding: 5px 0;
-}
-
-nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #F958DB;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: width 0.5s ease;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-}
-
-.text {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    z-index: 2;
-}
-
-.text p {
-    font-size: 30px;
-    margin-bottom: 1rem;
-}
-
-.text h1 {
-    font-size: 45px;
-    margin-top: 20px;
-    font-weight: 700;
-}
-
-
-.text h1 span{
-    color: #F958DB;
-}
-
- /* ~~~~~~~~~~~~~~~~~~~~~~~About~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-
-
-
-
-
-#about{
-    padding: 80px 0;
-    color: white;
- }
-
- .row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
- } 
-
- .col-6 img {
-    border-radius: 40px;
-    margin: 10%;
-
-    
-    
-    
-}
-.col-6 h1 {
-    font-size: 30px;
-    font-weight: 600;
-    color: white;
-    
-}
-
-.col-6 p {
-    font-size: 15px;
-    font-family:  Arial, sans-serif;
-    
-    
-}
-
-
-#animated-text {
-    font-weight: bold;
-    white-space: nowrap; /* Prevent text wrapping */
-    overflow: hidden; /* Hide the text that's not shown yet */
-    display: inline-block;
-}
-
-.tab-titles{
-    display: flex;
-    margin: 20px 0 40px;
-}
-
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #F958DB;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-}
-
-.tab-links.active-link::after{
-    width: 50%;
-}
-
-.tab-contents ul li span{
-      font-size: 14px;
-}
-
-.tab-contents{
-    display: none;
-}
-
-.tab-contents.active-tab{
-    display: block;
-}
-
-h2{
-    text-align: center;
-}
-h2 {
-    width: 500px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #949492;
-    color: rgb(0, 0, 0);
-}
-
-
-
-=======
 * {
     margin: 0;
     padding: 0;
@@ -562,14 +365,14 @@ form input, form textarea{
     color:rgb(241, 146, 206);
  }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~css for small screen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~css for small screen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 nav .fas{
     display: none;
 }
 
 @media only screen and (max-width: 600px){
     #header {
-       background-image: url(image/image0-removebg-preview.png);
+       background-image: url(image/phone\ pic.jpg);
        
     }
 
@@ -580,6 +383,11 @@ nav .fas{
     .text h1{
         font-size: 30px;
     }
+
+
+
+
+    
     nav .fas{
         display: block;
         font-size: 25px;
@@ -588,12 +396,14 @@ nav .fas{
         background:#F958DB;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
     }
-    nav ul li{
+    nav ul li {
         display: block;
         margin: 25px;
 
@@ -605,5 +415,24 @@ nav .fas{
         cursor: pointer;
 
     }
+
+.sub-title{
+   font-size: 40px;
+}
+
+.about-col-4, .about-col-6{
+   flex-basis: 100%;
+
+}
+
+
  }
->>>>>>> 74033ec (projects section, contact section)
+
+*/
+
+
+#msg{
+   color: #61b752;
+   margin-top: -40px;
+   display: block;
+}
